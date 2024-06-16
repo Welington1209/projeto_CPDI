@@ -1,0 +1,107 @@
+#membros {
+  display: flex;
+  align-items: center;
+}
+
+#membros .info {
+  max-width: 60%;
+  padding: 1.5rem;
+  text-align: center;
+  height: 100vh;
+}
+
+.info img {
+  max-width: 100%;
+}
+
+.info h2 {
+  font-size: 3rem;
+  color: rgb(25, 25, 87);
+}
+
+.gerenciamento {
+  background-color: rgb(25, 25, 87);
+  min-width: 40%;
+  height: 100vh;
+
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #f2f2f2;
+}
+
+.gerenciamento > div {
+  width: 60%;
+  box-shadow: #f2f2f242 0px 6px 5px 0px;
+  height: 200px;
+  border-radius: 0.2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 2.5rem;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  opacity: 0.7;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.gerenciamento > div:hover {
+  opacity: 1;
+  scale: 1.1;
+}
+
+.gerenciamento > div i {
+  align-self: flex-start;
+  font-size: 3rem;
+}
+
+.gerenciamento > div a {
+  align-self: flex-start;
+}
+/* 
+.gerenciamento .consulta {
+  align-self: flex-start;
+}
+
+.gerenciamento .exames {
+  align-self: flex-end;
+} */
+
+@media (max-width: 975px) {
+  #membros {
+    flex-direction: column;
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .info h2 {
+    font-size: 2.5rem;
+  }
+
+  .info,
+  .gerenciamento {
+    max-height: 50vh;
+    min-width: 100%;
+  }
+
+  .info img {
+    max-width: 50%;
+    height: auto;
+  }
+
+  .gerenciamento > div {
+    width: 80%;
+  }
+
+  .gerenciamento > div i {
+    font-size: 2rem;
+  }
+}
