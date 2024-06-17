@@ -76,4 +76,8 @@
     max-width: 100vw;
   }
 
+  #home .info-home h1 {
+    font-size: 2rem;
+  }
+
 }

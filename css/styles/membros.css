@@ -83,12 +83,12 @@
   }
 
   .info h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .info,
   .gerenciamento {
-    max-height: 50vh;
+    min-height: 50vh;
     min-width: 100%;
   }
 
@@ -99,9 +99,14 @@
 
   .gerenciamento > div {
     width: 80%;
+    font-size: 1rem;
   }
 
   .gerenciamento > div i {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .gerenciamento > div a {
+    font-size: .8rem;
   }
 }
