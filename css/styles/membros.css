@@ -1,9 +1,9 @@
-#membros {
+#members {
   display: flex;
   align-items: center;
 }
 
-#membros .info {
+#members .info {
   max-width: 60%;
   padding: 1.5rem;
   text-align: center;
@@ -11,20 +11,20 @@
 }
 
 .info img {
-  max-width: 100%;
+  max-width: 100vh;
 }
 
 .info h2 {
   font-size: 3rem;
   color: rgb(25, 25, 87);
+  color: #222;
 }
 
-.gerenciamento {
+.management {
   background-color: rgb(25, 25, 87);
   min-width: 40%;
   height: 100vh;
-
-  padding: 1.5rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -32,40 +32,68 @@
   color: #f2f2f2;
 }
 
-.gerenciamento > div {
+.management > div {
   width: 60%;
   box-shadow: #f2f2f262 0 0 10px 5px;
   height: 200px;
-  border-radius: 0.2rem;
+  border-radius: 0.5rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  padding: 0.5rem 2.5rem;
-  cursor: pointer;
+  padding: 1rem 1rem;
   transition: 0.4s ease-in-out;
   opacity: 0.7;
-  font-weight: normal;
-  margin-bottom: 1rem;
+  background-color: #f2f2f2;
+  background-position: center;
+  background-size: cover;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
 }
 
-.gerenciamento > div:hover {
+.management .query-management {
+  background-image: url("../../img/consulta.svg");
+}
+
+.management .medication {
+  background-image: url("../../img/medications.svg");
+}
+
+.management .exams {
+  background-image: url("../../img/exams.svg");
+}
+
+.management > div:hover h3,
+.management > div:hover .btn-login {
+  opacity: 1;
+}
+
+.management > div:hover {
   opacity: 1;
   scale: 1.1;
 }
 
-.gerenciamento > div i {
+.management > div h3 {
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.management > div i {
   align-self: flex-start;
   font-size: 3rem;
 }
 
-.gerenciamento > div a {
+.management > div a {
   align-self: flex-start;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
 }
 
 @media (max-width: 975px) {
-  #membros {
+  #members {
     flex-direction: column;
+    min-height: 100vh;
   }
 
   .info {
@@ -93,21 +121,22 @@
     opacity: 0.3;
   }
 
-  .gerenciamento {
+  .management {
     min-height: 50vh;
     min-width: 100%;
+    gap: 1rem;
   }
 
-  .gerenciamento > div {
+  .management > div {
     width: 80%;
     font-size: 1rem;
   }
 
-  .gerenciamento > div i {
+  .management > div i {
     font-size: 1.5rem;
   }
 
-  .gerenciamento > div a {
+  .management > div a {
     font-size: 0.8rem;
   }
 }

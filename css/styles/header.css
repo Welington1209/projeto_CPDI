@@ -56,11 +56,11 @@ li a:hover {
     background-color: rgb(25, 25, 87);
   }
 
-  .barra-2 {
+  .bar-2 {
     top: 10px;
   }
 
-  .barra-3 {
+  .bar-3 {
     top: 20px;
   }
 
@@ -74,17 +74,17 @@ li a:hover {
     background-color: rgb(25, 25, 87);
   }
 
-  .menu-cinza .barra-1,
-  .menu-cinza .barra-3 {
+  .menu-cinza .bar-1,
+  .menu-cinza .bar-3 {
     rotate: 45deg;
     top: 10px;
   }
 
-  .menu-cinza .barra-2 {
+  .menu-cinza .bar-2 {
     rotate: 140deg;
   }
 
-  .esconder {
+  .hide-navbar {
     display: none;
   }
 

@@ -1,0 +1,89 @@
+#queries {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  color: #f2f2f2;
+  position: relative;
+}
+
+#queries::before {
+  content: "";
+  opacity: 0.5;
+  background-color: #f2f2f2;
+
+  background: url("../../img/consulta.svg");
+  background-color: rgb(25, 25, 87);
+
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.img-queries {
+  height: 100%;
+  z-index: 1;
+}
+
+.img-queries img {
+  max-height: 100%;
+  border-radius: 2.5rem;
+}
+
+.info-queries {
+  width: 50%;
+  border: 2px solid rgb(25, 25, 87);
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+
+.info-queries h2 {
+  font-size: 3rem;
+  background-color: #f2f2f2;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 1rem;
+  color: #222;
+}
+
+.info-queries p {
+  cursor: pointer;
+
+  font-size: 1.5rem;
+  border-bottom: 2px solid;
+  justify-content: space-between;
+  display: flex;
+  background-color: rgb(25, 25, 87);
+  padding: 1rem;
+}
+
+.queries-description p:last-child {
+  display: none;
+  background-color: #f2f2f2;
+  color: #222;
+  font-weight: bold;
+}
+
+.hide p:last-child {
+  display: block;
+}
+
+@media (max-width: 975px) {
+  .img-queries {
+    display: none;
+  }
+
+  .info-queries {
+    width: 100%;
+  }
+
+  .info-queries h2 {
+    font-size: 2rem;
+  }
+}
