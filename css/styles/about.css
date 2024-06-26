@@ -1,0 +1,60 @@
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--primary-grey);
+  color: var(--dark-grey);
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--dark-grey);
+}
+
+p {
+  max-width: 900px;
+  font-size: 1.3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: var(--primary-grey);
+}
+
+.goals,
+.our-values {
+  display: flex;
+  gap: 2rem;
+}
+
+.projects-description, .about-us {
+  font-weight: bold;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-blue);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: var(--primary-grey);
+  gap: .5rem;
+  text-align: center;
+
+}
+
+.card p {
+    letter-spacing: 1px;
+}
+
+.title-h3 {
+  color: var(--dark-grey);
+}

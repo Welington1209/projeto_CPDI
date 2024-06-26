@@ -11,8 +11,8 @@
 }
 
 #home .info-home {
-  background-color: rgb(25, 25, 87);
-  color: #f2f2f2;
+  background-color: var(--primary-blue);
+  color: var(--primary-grey);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,7 +52,7 @@
   transform: rotate(90deg);
   opacity: 0;
   animation: animar 2s ease-in-out infinite;
-  color: rgb(25, 25, 87);
+  color: var(--primary-blue);
 }
 
 #to-top-btn {
@@ -62,9 +62,9 @@
   opacity: 0;
   pointer-events: none;
   font-size: 2rem;
-  color: #f2f2f2;
+  color: var(--primary-grey);
   transform: rotate(270deg);
-  background-color: rgb(22, 159, 22);
+  background-color: var(--green);
   text-align: center;
   display: flex;
   padding: 0.5rem;

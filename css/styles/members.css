@@ -1,6 +1,8 @@
 #members {
   display: flex;
   align-items: center;
+  height: 100vh;
+
 }
 
 #members .info {
@@ -16,11 +18,11 @@
 
 .info h2 {
   font-size: 3rem;
-  color: #222;
+  color: var(--dark-grey);
 }
 
 .management {
-  background-color: rgb(25, 25, 87);
+  background-color: var(--primary-blue);
   min-width: 40%;
   height: 100vh;
   padding: 1rem;
@@ -28,7 +30,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  color: #f2f2f2;
+  color: var(--primary-grey);
 }
 
 .management > div {
@@ -43,10 +45,11 @@
   padding: 1rem 1rem;
   transition: 0.4s ease-in-out;
   opacity: 0.7;
-  background-color: #f2f2f2;
+  background-color: var(--primary-grey);
   background-position: center;
   background-size: cover;
   color: rgb(0, 0, 0);
+  color: var(--dark-grey);
   font-size: 1.5rem;
 }
 

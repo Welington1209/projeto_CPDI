@@ -8,7 +8,7 @@ header {
 
 .logo {
   font-size: 2rem;
-  color: rgb(25, 25, 87);
+  color: var(--dark-grey);
 }
 
 header ul {
@@ -18,15 +18,15 @@ header ul {
 
 li a {
   font-size: 1.2rem;
-  color: rgb(25, 25, 87);
-  padding: 0.2rem 1rem;
+  color: var(--dark-grey);
+  padding: 0.5rem 1rem;
   transition: 0.4s ease-in-out;
   font-weight: bold;
   border-radius: 0.2rem;
 }
 
 li a:hover {
-  background-color: #b5b3b3;
+  background-color: var(--light-grey);
 }
 
 .hamburguer {
@@ -53,7 +53,7 @@ li a:hover {
     width: 30px;
     height: 3px;
     position: absolute;
-    background-color: rgb(25, 25, 87);
+    background-color: var(--dark-grey);
   }
 
   .bar-2 {
@@ -65,13 +65,13 @@ li a:hover {
   }
 
   .menu-cinza > div {
-    background-color: #f2f2f2;
+    background-color: var(--primary-grey);
     transition: 0.4s;
   }
 
   .menu-azul > div {
     transition: 0.4s;
-    background-color: rgb(25, 25, 87);
+    background-color: var(--dark-grey);
   }
 
   .menu-cinza .bar-1,
@@ -93,8 +93,9 @@ li a:hover {
     align-items: center;
     gap: 0;
     justify-content: space-evenly;
-    background-color: rgb(25, 25, 87);
+    background-color: var(--primary-blue);
     position: absolute;
+    border-radius: .2rem;
     right: 0px;
     top: 0px;
     width: 250px;
@@ -111,6 +112,6 @@ li a:hover {
   }
 
   .mostrar li a {
-    color: #f2f2f2;
+    color: var(--primary-grey);
   }
 }
