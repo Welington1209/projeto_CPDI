@@ -6,7 +6,6 @@
   color: var(--primary-grey);
   position: relative;
   height: 100vh;
-
 }
 
 #queries::before {
@@ -15,8 +14,6 @@
   background-color: var(--primary-grey);
 
   background: url("../../img/consulta.svg");
-  /* background-color: var(--primary-blue); */
-
   background-position: center;
   background-size: cover;
   top: 0;
@@ -45,7 +42,6 @@
 .info-queries h2 {
   font-size: 3rem;
   background-color: var(--primary-grey);
-
   border-radius: 0.5rem 0.5rem 0 0;
   display: flex;
   justify-content: space-between;
@@ -67,7 +63,7 @@
 .queries-description p:last-child {
   display: none;
   background-color: var(--primary-grey);
-  color: #222;
+  color: var(--dark-grey);
   font-weight: bold;
 }
 

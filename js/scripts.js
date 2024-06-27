@@ -3,6 +3,8 @@ const toTopBtn = document.querySelector("#to-top-btn");
 const menu = document.querySelector("#hamburguer");
 const navBar = document.querySelector("#nav-bar");
 
+
+
 const icons = Array.from(document.querySelectorAll(".queries-description"));
 
 window.addEventListener("scroll", () => {
@@ -32,3 +34,4 @@ icons.map((icon) => {
     icon.classList.toggle("hide");
   });
 });
+
