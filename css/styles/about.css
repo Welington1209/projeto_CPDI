@@ -5,7 +5,6 @@
   padding: 2rem;
   align-items: center;
   gap: 2rem;
-  background-color: var(--primary-grey);
   color: var(--dark-grey);
 }
 
@@ -41,6 +40,11 @@ p {
   filter: blur(2px);
 }
 
+/* .dark .card {
+  background-color: var(--dark-mode-primary-blue);
+
+} */
+
 .card:hover {
   filter: blur(0);
 }
@@ -54,6 +58,14 @@ h3 span {
   color: var(--green);
 }
 
+.values {
+  color: var(--dark-grey);
+}
+
+/* .dark .values {
+  color: var(--dark-mode-primary-blue);
+} */
+
 .card p {
   letter-spacing: 1px;
   max-width: 600px;
@@ -66,4 +78,15 @@ h3 {
 .projects-description {
   padding: 2rem 5rem;
   box-shadow: var(--primary-blue) 0 0 10px 5px;
+}
+
+@media (max-width: 975px) {
+  .goals,
+  .our-values {
+    flex-direction: column;
+  }
+
+  .projects-description {
+    padding: 0.5rem 0.5rem;
+  }
 }

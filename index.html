@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>+Saúde</title>
+
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
+
     <script src="js/scripts.js" defer></script>
 
     <link
@@ -16,7 +19,7 @@
     />
   </head>
   <body>
-    <header>
+    <header id="header" >
       <a href="#" class="logo">+Saúde</a>
 
       <div id="hamburguer" class="hamburguer">
@@ -95,7 +98,7 @@
           </div>
         </div>
 
-        <h3>Quais são nossos <span>valores</span>?</h3>
+        <h3>Quais são nossos <span class="values">valores</span>?</h3>
         <div class="our-values">
           <div class="card">
             <h3>Acessibilidade:</h3>
@@ -128,7 +131,8 @@
             <p>
               Nosso compromisso com o bem-estar vai além do indivíduo; também
               nos preocupamos com o bem-estar do planeta. Por isso, buscamos
-              operar de maneira sustentável, minimizando nosso impacto ambiental.
+              operar de maneira sustentável, minimizando nosso impacto
+              ambiental.
             </p>
           </div>
         </div>
@@ -136,7 +140,16 @@
         <h3>Projetos Sociais</h3>
 
         <p class="projects-description">
-          Estamos alinhados com o Objetivo de Desenvolvimento Sustentável (ODS) da ONU relacionado à Saúde e Bem-Estar, trabalhando para garantir o acesso universal a serviços de saúde de qualidade, promovendo o bem-estar e o desenvolvimento sustentável em nossa comunidade. Por isso, duas vezes ao ano montamos o "Mutirão por mais saúde", um movimento que mobiliza dezenas de médicos e profissionais da saúde para prestar serviços totalmente gratuitos para a população menos favorecida. Atendimentos como consultas, monitoramento de pressão arterial, palestras sobre ISTs e planejamento familiar, além de muitos outros atendimentos totalmente grátis.
+          Estamos alinhados com o Objetivo de Desenvolvimento Sustentável (ODS)
+          da ONU relacionado à Saúde e Bem-Estar, trabalhando para garantir o
+          acesso universal a serviços de saúde de qualidade, promovendo o
+          bem-estar e o desenvolvimento sustentável em nossa comunidade. Por
+          isso, duas vezes ao ano montamos o "Mutirão por mais saúde", um
+          movimento que mobiliza dezenas de médicos e profissionais da saúde
+          para prestar serviços totalmente gratuitos para a população.
+          Atendimentos como consultas, exames de prevenção, palestras sobre
+          autocuidado e planejamento familiar, além de muitos outros
+          atendimentos totalmente grátis.
         </p>
       </section>
 
@@ -209,6 +222,17 @@
           </ul>
         </div>
       </section>
+
+      <div>
+      <button id="mode-btn">
+        <i class="fa-regular fa-moon" id="moon"></i>
+        <i class="fa-regular fa-sun none" id="sun"></i>
+
+      </button>
+
+      </div>
     </main>
   </body>
+  <script src="https://unpkg.com/kursor"></script>
+ 
 </html>

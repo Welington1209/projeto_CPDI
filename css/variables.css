@@ -1,9 +1,21 @@
 :root {
-    --primary-grey: #f2f2f2;
+    --primary-grey: #e0dfdf;
     --dark-grey: #222;
     --light-grey: #b5b3b3;
     
     --primary-blue: rgb(25,25,87);
 
     --green:  rgb(22, 159, 22);
+
+    --dark-mode-primary-grey: ;
+    --dark-mode-light-grey: ;
+}
+
+.dark:root {
+    --primary-grey: #444444;
+    --dark-grey: #e0dfdf;
+
+    --light-grey: #222;
+    
+    --primary-blue:rgb(1, 1, 35);
 }

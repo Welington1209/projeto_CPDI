@@ -4,12 +4,17 @@ header {
   padding: 0.5rem 1rem;
   align-items: center;
   width: 100%;
+  position: relative;
 }
 
 .logo {
   font-size: 2rem;
   color: var(--dark-grey);
 }
+
+/* .dark .logo {
+  color: var(--primary-grey);
+} */
 
 header ul {
   display: flex;
@@ -25,9 +30,17 @@ li a {
   border-radius: 0.2rem;
 }
 
+/* .dark li a {
+  color: var(--primary-grey);
+} */
+
 li a:hover {
   background-color: var(--light-grey);
 }
+
+/* .dark li a:hover {
+  background-color: var(--dark-mode-light-grey);
+} */
 
 .hamburguer {
   display: none;
@@ -95,7 +108,7 @@ li a:hover {
     justify-content: space-evenly;
     background-color: var(--primary-blue);
     position: absolute;
-    border-radius: .2rem;
+    border-radius: 0.2rem;
     right: 0px;
     top: 0px;
     width: 250px;

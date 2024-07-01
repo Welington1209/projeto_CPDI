@@ -17,6 +17,7 @@
 
 html {
   scroll-behavior: smooth;
+  transition: .5s all;
 }
 
 body {
@@ -30,8 +31,10 @@ body {
   padding: 0;
 }
 
-section {
-}
+/* .dark {
+  background-color: var(--dark-mode-primary-grey);
+
+} */
 
 .btn-login {
   background-color: var(--green);
@@ -52,4 +55,26 @@ section {
 .btn-login:hover {
   opacity: 1;
 }
+
+#mode-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  position: fixed;
+  right: 50px;
+  top: 100px;
+  border: none;
+  background-color: var(--dark-grey);
+  font-size: 1.2rem;
+  
+}
+
+#mode-btn .none {
+  display: none;
+}
+
+/* .dark #mode-btn {
+  background-color: var(--primary-grey);
+
+} */
 
