@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="../css/styles/login.css">
-</head>
-<body>
-    <div class="page">
-        <form method="POST" class="formLogin">
-            <h1>Login</h1>
-            <p>Digite os seus dados de acesso no campo abaixo.</p>
-            <label for="email">E-mail</label>
-            <input type="email" placeholder="Digite seu e-mail" autofocus="true" />
-            <label for="password">Senha</label>
-            <input type="password" placeholder="Digite seu nome" />
-            <a href="#">Esqueci minha senha</a>
-            <!-- <input type="submit" value="Acessar" class="btn" /> -->
+    <link rel="stylesheet" href="../css/styles/login.css" />
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
 
-            <a class="btn" href="../index.html">Acessar</a>
-        </form>
+
+    <script src="../js/login.js" defer></script>
+  </head>
+  <body>
+    <div class="page">
+      <form class="formLogin">
+        <h1>Login</h1>
+        <p>Digite os seus dados de acesso no campo abaixo.</p>
+        <label for="name">Nome de usuário</label>
+        <input
+          type="name"
+          placeholder="Digite seu nome de usuário"
+          autofocus="true"
+          id="name-input"
+          required
+        />
+        <label for="password">Senha</label>
+        <input type="password" placeholder="Digite seu nome" required />
+        <a href="#">Esqueci minha senha</a>
+
+        <input type="submit" class="btn" id="btn-login" />
+      </form>
+
+      <div class="home-page">
+        <h2 class="name-h2"></h2>
+        <h3>Seja Bem-Vindo!</h3>
+
+        <a href="../index.html">Ir para página inicial</a>
+      </div>
     </div>
-    
-</body>
+  </body>
+  <script src="https://unpkg.com/kursor"></script>
+
+</html>

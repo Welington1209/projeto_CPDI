@@ -3,13 +3,14 @@ const toTopBtn = document.querySelector("#to-top-btn");
 const menu = document.querySelector("#hamburguer");
 const navBar = document.querySelector("#nav-bar");
 
-const btnDarkMode = document.querySelector("#mode-btn")
-const sunElement = document.querySelector("#sun")
-const moonElement = document.querySelector("#moon")
+const btnDarkMode = document.querySelector("#mode-btn");
+const sunElement = document.querySelector("#sun");
+const moonElement = document.querySelector("#moon");
 
 const icons = Array.from(document.querySelectorAll(".queries-description"));
 
-const htmlElement = document.querySelector("html")
+const htmlElement = document.querySelector("html");
+
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 100) {
@@ -39,25 +40,16 @@ icons.map((icon) => {
   });
 });
 
-
 new kursor({
   type: 1,
-  removeDefaultCursor: true
+  removeDefaultCursor: true,
 });
 
 btnDarkMode.addEventListener("click", () => {
-  // document.body.classList.toggle("dark")
-  // headerElement.classList.toggle("dark")
-  // btnDarkMode.classList.toggle("dark")
+  htmlElement.classList.toggle("dark");
 
-  htmlElement.classList.toggle("dark")
-
-  sunElement.classList.toggle("none")
- moonElement.classList.toggle("none")
-})
-
-
-
-
+  sunElement.classList.toggle("none");
+  moonElement.classList.toggle("none");
+});
 
 

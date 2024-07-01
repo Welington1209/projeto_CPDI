@@ -12,10 +12,6 @@ header {
   color: var(--dark-grey);
 }
 
-/* .dark .logo {
-  color: var(--primary-grey);
-} */
-
 header ul {
   display: flex;
   gap: 3rem;
@@ -30,17 +26,9 @@ li a {
   border-radius: 0.2rem;
 }
 
-/* .dark li a {
-  color: var(--primary-grey);
-} */
-
 li a:hover {
   background-color: var(--light-grey);
 }
-
-/* .dark li a:hover {
-  background-color: var(--dark-mode-light-grey);
-} */
 
 .hamburguer {
   display: none;
@@ -112,7 +100,7 @@ li a:hover {
     right: 0px;
     top: 0px;
     width: 250px;
-    height: 300px;
+    height: 350px;
     z-index: 1;
   }
 

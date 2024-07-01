@@ -4,6 +4,9 @@
 @import url("styles/about.css");
 @import url("styles/members.css");
 @import url("styles/queries.css");
+@import url("styles/blog.css");
+@import url("styles/footer.css");
+
 
 * {
   margin: 0;
@@ -31,11 +34,6 @@ body {
   padding: 0;
 }
 
-/* .dark {
-  background-color: var(--dark-mode-primary-grey);
-
-} */
-
 .btn-login {
   background-color: var(--green);
   border-radius: 0.5rem;
@@ -61,20 +59,24 @@ body {
   height: 40px;
   border-radius: 50px;
   position: fixed;
-  right: 50px;
+  right: 20px;
   top: 100px;
   border: none;
-  background-color: var(--dark-grey);
-  font-size: 1.2rem;
-  
+  background-color: var(--primary-grey);
+
+  font-size: 1.5rem;
+
 }
 
 #mode-btn .none {
   display: none;
 }
 
-/* .dark #mode-btn {
-  background-color: var(--primary-grey);
+#sun {
+  color: rgb(255, 157, 0);
+}
 
-} */
+#moon {
+  color: var(--primary-blue);
+}
 
