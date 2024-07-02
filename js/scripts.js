@@ -11,6 +11,10 @@ const icons = Array.from(document.querySelectorAll(".queries-description"));
 
 const htmlElement = document.querySelector("html");
 
+new kursor({
+  type: 1,
+  removeDefaultCursor: true,
+});
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 100) {
@@ -35,21 +39,12 @@ menu.addEventListener("click", () => {
 
 icons.map((icon) => {
   icon.addEventListener("click", () => {
-    console.log(icon);
     icon.classList.toggle("hide");
   });
 });
 
-new kursor({
-  type: 1,
-  removeDefaultCursor: true,
-});
-
 btnDarkMode.addEventListener("click", () => {
   htmlElement.classList.toggle("dark");
-
   sunElement.classList.toggle("none");
   moonElement.classList.toggle("none");
 });
-
-

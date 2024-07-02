@@ -11,13 +11,13 @@ footer h3 {
   border-bottom: 1px solid;
 }
 
-.main {
+.main-footer {
   display: flex;
   padding: 2rem;
   justify-content: space-between;
 }
 
-.main > div {
+.main-footer > div {
   width: 20%;
 }
 
@@ -47,6 +47,28 @@ footer h3 {
   border: 1px solid;
   padding: 0.5rem;
   border-radius: 0.2rem;
+  transition: .5s all;
+  cursor: pointer;
+}
+
+.social-medias ul li:first-child {
+  color: rgb(0, 128, 255);
+}
+
+.social-medias ul li:last-child {
+  color: rgb(3, 0, 163);
+}
+
+.social-medias ul li:nth-child(2) {
+  color: rgb(183, 0, 255);
+}
+
+.social-medias ul li:nth-child(3) {
+  color: rgb(0, 72, 255);
+}
+
+.social-medias ul li:hover {
+  scale: 1.1;
 }
 
 .license {
@@ -68,13 +90,13 @@ footer h3 {
 }
 
 @media (max-width: 975px) {
-  .main {
+  .main-footer {
     flex-direction: column;
     padding: 1rem;
     align-items: center;
   }
 
-  .main > div {
+  .main-footer > div {
     width: 80%;
     margin-bottom: 2rem;
   }

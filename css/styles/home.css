@@ -20,10 +20,6 @@
   width: 40%;
 }
 
-/* #home.dark .info-home {
-  background-color: var(--dark-mode-primary-blue);
-} */
-
 #home .info-home h1 {
   font-size: 3.5rem;
   max-width: 600px;

@@ -32,18 +32,12 @@ p {
   background-color: var(--primary-blue);
   border-radius: 0.3rem;
   padding: 0.5rem 1rem;
-  color: var(--primary-grey);
+  color: var(--text-grey);
   gap: 0.5rem;
   text-align: center;
   transition: 0.4s ease-in-out;
   box-shadow: var(--primary-blue) 0 0 10px 5px;
-  filter: blur(2px);
 }
-
-/* .dark .card {
-  background-color: var(--dark-mode-primary-blue);
-
-} */
 
 .card:hover {
   filter: blur(0);
@@ -61,10 +55,6 @@ h3 span {
 .values {
   color: var(--dark-grey);
 }
-
-/* .dark .values {
-  color: var(--dark-mode-primary-blue);
-} */
 
 .card p {
   letter-spacing: 1px;
