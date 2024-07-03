@@ -60,6 +60,10 @@
   background-color: var(--primary-blue);
 }
 
+.info-queries p a {
+  padding: .5rem 1rem;
+}
+
 .queries-description p:last-child {
   display: none;
   background-color: var(--primary-grey);
